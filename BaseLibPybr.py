@@ -4,8 +4,9 @@ Date Created: 			10/1/2019
 Date Last Modified:		1/6/2019
 Created under Open Commons III License for The University Of North Texas Libraries
 
-NOTE: This script requires that the user have access to their usage data server for pyodbc to connect. The server name and database name should be used for the 'server' and 'db' variables.
-NOTE: This script is configured to pull all usage credentials for reports from tables in the usage database (Called LUC here), where these tables are called 'ResourcesR5' and 'ResourcesR4' for resources reporting usage in COUNTER R5 and COUNTER R4, respectively.
+NOTE: The GetCredentialsRx functions require a usage database (Called LUC here) with tables holding the login credentials
+	where these tables are called 'ResourcesR5' and 'ResourcesR4' for resources reporting usage in COUNTER R5 and COUNTER R4, respectively.
+	--- If the user would rather use a CSV file than a database table, that can be done with the getCredentialsRx_DEPRECATED functions instead.
 '''
 
 import calendar
